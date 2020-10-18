@@ -149,8 +149,18 @@
 
   .carousel-btn {
       width: 5% !important;
-      display: none;
+      /* display: none; */
   }
+
+  .carousel-control-next {
+      right: -40px;
+  }
+
+  .carousel-control-prev {
+      left: -40px;
+  }
+
+
 
   /* BUY NOW ACTION BAR */
 
