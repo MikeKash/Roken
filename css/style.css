@@ -1,0 +1,330 @@
+  *,
+  *::before,
+  *::after {
+      box-sizing: border-box;
+  }
+
+  /* CUSTOM PROPERTIES */
+  :root {
+      /* fonts */
+      --ff-primary: 'Source Sans Pro', sans-serif;
+      --ff-secondary: 'Source Code Pro', monospace;
+      --ff-par: 'Poppins', sans-serif;
+      --fw-regular: 300;
+      --fw-bold: 900;
+
+
+      /* font sizes */
+      --fs-h1: 3rem;
+      --fs-h2: 2.25rem;
+      --fs-h3: 1.25rem;
+      --fs-body: 1rem;
+
+      /* background colors */
+      --bs: 0.3em 0.3em 0.7em rgba(0, 0, 0, .25),
+          0.125em 0.125em .4em rgba(0, 0, 0, .4);
+
+      /* offset position */
+      --normX: translateX(0);
+      --normY: translateY(0);
+      --off-left: translateX(-30px);
+      --off-right: translateX(30px);
+      --off-down: translateY(30px);
+      --off-up: translateY(-30px);
+
+      /* animation proprties */
+      --op0: 0;
+      --op1: 1;
+      --tr04s: opacity 0.8s ease 0.4s, transform 0.8s ease 0.4s;
+      --tr06s: opacity 0.8s ease 0.6s, transform 0.8s ease 0.6s;
+      --tr08s: opacity 0.8s ease 0.8s, transform 0.8s ease 0.8s;
+      --tr1s: opacity 0.8s ease 1s, transform 0.8s ease 1s;
+  }
+
+  html {
+      scroll-behavior: smooth;
+  }
+
+  #header {
+      border-bottom: 2px solid var(--clr-accent);
+  }
+
+  .banner {
+      background-color: var(--bg-clr-grey);
+      padding: 2rem 0;
+  }
+
+
+  .button {
+      background-color: var(--clr-accent);
+      color: var(--clr-light);
+      font-size: 21px;
+      padding: 5px 20px;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+      text-align: center;
+      border: none;
+  }
+
+  .button:hover {
+      background: rgba(17, 174, 194, 0.9);
+      text-decoration: none;
+      border: none;
+  }
+
+  .banner hr {
+      border-style: solid none none none;
+      border-width: 7px;
+      border-color: var(--clr-accent);
+      max-width: 27%;
+      text-align: left;
+      margin-left: 0;
+  }
+
+
+  .phone {
+      width: 80%;
+      max-width: 400px;
+      margin-top: 2rem;
+  }
+
+  /* SERVICES SECTION */
+
+  .services {
+      padding: 3rem 2rem;
+  }
+
+  .services-txt h2 {
+      color: var(--clr-accent);
+  }
+
+  .cell-phone {
+      width: 80%;
+  }
+
+  .icon {
+      width: 60px;
+      height: 60px;
+      position: absolute;
+  }
+
+  .icon.i1 {
+      top: 24%;
+      left: 20%;
+  }
+
+
+  .icon.i2 {
+      top: 7%;
+      left: 40%;
+  }
+
+  .icon.i3 {
+      top: 26%;
+      left: 60%;
+  }
+
+
+  .icon.i4 {
+      top: -15%;
+      left: 70%;
+  }
+
+
+
+  .services-media::after {
+      content: '';
+      display: block;
+      width: 80%;
+      height: 1.2px;
+      margin: 2rem auto 1rem;
+      background: var(--bg-clr-grey);
+      opacity: 0.2;
+  }
+
+  .carousel-overflow {
+      overflow: visible !important;
+  }
+
+  .carousel-btn {
+      width: 5% !important;
+      display: none;
+  }
+
+  /* BUY NOW ACTION BAR */
+
+  .buy-now {
+      background-color: var(--clr-dark);
+  }
+
+  .buy-btn {
+      padding: 20px 40px;
+      clip-path: polygon(50% 0%, 100% 0, 100% 25%, 100% 51%, 100% 100%, 0 100%, 0 70%, 10% 50%, 0 30%, 0 0);
+  }
+
+
+  /* RECENT WORKS */
+  .recent-work {
+      background-color: rgba(248, 248, 248, 0.2);
+      background-image: url(../images/Recent_works/Patterns.png);
+      background-size: cover;
+      background-blend-mode: difference;
+      color: var(--clr-light);
+      text-align: center;
+      padding: 0 0 3rem;
+  }
+
+  .testimonials {
+      min-height: 308px;
+      height: 100%;
+  }
+
+  .carsl-btn-prev {
+      top: 0.5%;
+      bottom: auto !important;
+      left: 10% !important;
+  }
+
+  .carsl-btn-next {
+      top: 0.5%;
+      bottom: auto !important;
+      right: 10% !important;
+  }
+
+
+  /* CUSTOMERS */
+
+  .customers {
+      background-color: rgba(42, 42, 42, 0.9);
+      background-image: url(../images/Customers/customers-back.png);
+      background-size: cover;
+      background-blend-mode: overlay;
+      color: var(--clr-light) !important;
+      text-align: center;
+      padding: 3rem 0 7rem;
+      position: relative;
+  }
+
+  .customer-logos {
+      padding-top: 3rem;
+  }
+
+  .customer-logos::after {
+      content: '';
+      display: block;
+      width: 80%;
+      height: 1.2px;
+      margin: 2rem auto 1rem;
+      background: var(--bg-clr-ofwhite);
+      opacity: 0.6;
+  }
+
+  .customers h1 span {
+      color: var(--clr-accent);
+  }
+
+  .circle-img {
+      position: absolute;
+      bottom: -40px;
+      left: calc(50% - 43.5px);
+  }
+
+  .customers-carousel-btns {
+      color: white !important;
+      font-size: 2rem;
+  }
+
+  .customers a {
+      color: white !important;
+      text-decoration: none !important;
+  }
+
+  .customers a:hover {
+      color: #ffffffa8 !important;
+  }
+
+  /* RECENT POSTS/TESTIMONIALS */
+
+  .recent {
+      padding: 3rem 0;
+  }
+
+  .month {
+      background-color: var(--clr-accent);
+  }
+
+
+  /* RESPONSIVE SECTION */
+
+  .responsive {
+      background-color: var(--clr-accent);
+      padding: 1rem 0;
+  }
+
+  .study-img {
+      width: 276px;
+      height: 276px;
+  }
+
+  .responsive-btn {
+      background-color: var(--clr-dark);
+  }
+
+  .responsive-btn:hover {
+      background-color: rgb(58, 58, 58);
+  }
+
+  /* LATEST SECTION */
+
+  .latest {
+      background-color: var(--clr-dark);
+  }
+
+  .support {
+      background-color: var(--clr-dark-grey);
+  }
+
+  .support-box {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 55% 100%, 50% 80%, 45% 100%, 0 100%);
+      /* background-color: var(--clr-dark-grey); */
+  }
+
+  /* NEWSLETTER */
+
+  .newsletter {
+      padding: 3rem 0 5rem;
+  }
+
+  .slider-indicators {
+      bottom: -25%;
+  }
+
+  .slider-indicators .active {
+      background-color: var(--clr-accent);
+
+  }
+
+  .slider-indicators li {
+      border-radius: 50% !important;
+      width: 10px;
+      height: 10px;
+      background-color: #333333;
+      margin: 0 0.3rem;
+  }
+
+
+  .flicker-img {
+      min-width: 180px;
+  }
+
+
+  /* FOOTER */
+  .footer {
+      background-color: var(--bg-clr-footer);
+      padding: 1rem 0;
+  }
+
+  .footer a {
+      padding-bottom: 0 !important;
+  }

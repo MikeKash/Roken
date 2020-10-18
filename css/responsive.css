@@ -1,0 +1,187 @@
+@media (min-width: 1024px) {
+
+    .banner h2 {
+        font-size: 3rem;
+    }
+
+
+    .nav-block {
+        padding: 0 0.5rem;
+    }
+
+    .phone {
+        width: 100%;
+        max-width: 400px;
+    }
+
+
+    .services-txt {
+        padding-left: 6rem;
+    }
+
+    .cell-phone {
+        width: 100%;
+    }
+
+    .icon {
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        transition: all ease-in-out 200ms;
+    }
+
+    .icon.i1 {
+        top: 20%;
+        left: 14%;
+    }
+
+    .img-container {
+        padding-left: 5rem;
+    }
+
+    .img-container:hover .icon.i1 {
+        top: 33%;
+        left: 13%;
+    }
+
+    .icon.i2 {
+        top: 7%;
+        left: 47%;
+    }
+
+    .img-container:hover .icon.i2 {
+        top: 1%;
+    }
+
+    .icon.i3 {
+        top: 26%;
+        left: 69%;
+    }
+
+    .img-container:hover .icon.i3 {
+        top: 35%;
+        left: 71%;
+    }
+
+    .icon.i4 {
+        top: -15%;
+        left: 78%;
+    }
+
+    .img-container:hover .icon.i4 {
+        top: -16%;
+        left: 83%
+    }
+
+    .carsl-btn-prev {
+        top: 2%;
+        bottom: auto !important;
+        left: 37% !important;
+    }
+
+    .carsl-btn-next {
+        top: 2%;
+        bottom: auto !important;
+        right: 37% !important;
+    }
+
+    .flicker-img {
+        min-width: 68px;
+        min-height: 45px;
+    }
+}
+
+/* @media (min-width: 1023px) and (max-width: 1439px) {
+    .testimonials {
+        min-height: 308px;
+    }
+} */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .testimonials {
+        min-height: 418px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    /* BANNER */
+    .banner {
+        padding: 5rem 0;
+
+    }
+
+    .phone {
+        width: 100%;
+        max-width: 400px;
+    }
+
+
+    /* SERVICES */
+
+    .services {
+        padding: 7rem 0 2rem;
+    }
+
+    .carousel-btn {
+        width: 5% !important;
+        display: flex;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .flicker-img {
+        min-height: 130px;
+    }
+
+
+    .cell-phone {
+        width: 100%;
+    }
+
+    .icon {
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        transition: all ease-in-out 200ms;
+    }
+
+    .icon.i1 {
+        top: 20%;
+        left: 14%;
+    }
+
+    .img-container {
+        padding-left: 5rem;
+    }
+
+
+    .icon.i2 {
+        top: 7%;
+        left: 47%;
+    }
+
+
+    .icon.i3 {
+        top: 26%;
+        left: 69%;
+    }
+
+
+
+    .icon.i4 {
+        top: -15%;
+        left: 78%;
+    }
+
+
+}
+
+@media (max-width: 375px) {
+    .flicker-img {
+        min-width: 130px;
+    }
+
+}

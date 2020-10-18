@@ -1,0 +1,17 @@
+:root {
+    --bg-clr-light: #fff;
+    --bg-clr-grey: #4c4c4c;
+    --bg-clr-ofwhite: #f8f8f8;
+    --bg-clr-footer: #333333;
+
+
+    --clr-dark: #131313;
+    --clr-dark-grey: #303030;
+    --clr-light-grey: #656565;
+    --clr-accent: #29c0d4;
+
+}
+
+.accent {
+    color: var(--clr-accent);
+}
