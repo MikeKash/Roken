@@ -76,13 +76,13 @@
     .carsl-btn-prev {
         top: 1.7%;
         bottom: auto !important;
-        left: 34% !important;
+        left: 30% !important;
     }
 
     .carsl-btn-next {
         top: 1.7%;
         bottom: auto !important;
-        right: 34% !important;
+        right: 30% !important;
     }
 
     .flicker-img {
@@ -91,11 +91,19 @@
     }
 }
 
-/* @media (min-width: 1023px) and (max-width: 1439px) {
-    .testimonials {
-        min-height: 308px;
+@media (min-width: 1439px) {
+    .carsl-btn-prev {
+        top: 1.7%;
+        bottom: auto !important;
+        left: 33% !important;
     }
-} */
+
+    .carsl-btn-next {
+        top: 1.7%;
+        bottom: auto !important;
+        right: 33% !important;
+    }
+}
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .testimonials {
