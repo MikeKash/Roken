@@ -92,6 +92,15 @@
 }
 
 @media (min-width: 1439px) {
+    .crsl1-btn-prev {
+        left: -40px !important;
+    }
+
+    .crsl1-btn-next {
+        right: -40px !important;
+    }
+
+
     .carsl-btn-prev {
         top: 1.7%;
         bottom: auto !important;
